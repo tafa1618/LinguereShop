@@ -87,9 +87,9 @@ const Home = () => {
       {/* <EnVogue /> */}
       <ShopServices />
 			{/* Whattsapp button */}
-			<div class="whatsapp">
+			<div className="whatsapp">
 <a href="https://api.whatsapp.com/send?phone=+221781110455" >    
-<i class="fa fa-whatsapp fa-3x fa-spin" aria-hidden="true"></i></a>
+<i className="fa fa-whatsapp fa-3x fa-spin" aria-hidden="true"></i></a>
                 </div>
 			{/* Whattsapp button */}
       <Footer />

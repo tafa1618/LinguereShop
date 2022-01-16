@@ -173,7 +173,7 @@ const Products = [
     price: 38000,
   },
   {
-    id: '20',
+    id: '20a',
     name: 'Pack gel Lait Savon Cindella ',
     image: 'https://i.ibb.co/zfFB2Z1/Pack-Gel-Lait-Savon-Cindella38000.jpg',
     description: 'Pack gel Lait Savon Cindella',
