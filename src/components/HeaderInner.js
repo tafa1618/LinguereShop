@@ -2,6 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const HeaderInner = () => {
+  const style = {
+    width: 225,
+    height: 255,
+  };
   return (
     <div className='header-inner'>
       <div className='container'>
@@ -25,7 +29,8 @@ const HeaderInner = () => {
                         </Link>
                         <div className='image'>
                           <img
-                            src='https://via.placeholder.com/225x155'
+                            src='https://i.ibb.co/fpCwXYQ/2.jpg'
+                            style={style}
                             alt='#'
                           />
                         </div>
@@ -38,11 +43,12 @@ const HeaderInner = () => {
                       </li>
                       <li className='single-menu'>
                         <Link to='#' className='title-link'>
-                          Shorts
+                          Nuisettes
                         </Link>
                         <div className='image'>
                           <img
-                            src='https://via.placeholder.com/225x155'
+                            src='https://i.ibb.co/8gvJdH0/Whats-App-Image-2021-11-24-at-22-15-41-1.jpg'
+                            style={style}
                             alt='#'
                           />
                         </div>
@@ -60,6 +66,7 @@ const HeaderInner = () => {
                         <div className='image'>
                           <img
                             src='https://via.placeholder.com/225x155'
+                            style={style}
                             alt='#'
                           />
                         </div>

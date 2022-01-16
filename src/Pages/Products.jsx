@@ -8,6 +8,13 @@ const Electromenager = () => {
     width: 350,
     height: 350
   };
+
+	const Nuisettes = Products.filter(p => p.category === 'Nuisette')
+	const Robes = Products.filter(p => p.category === 'Robe')
+	const Shorts = Products.filter(p => p.category === 'Short')
+	const Cosmetiques = Products.filter(p => p.category === 'Coesmétique')
+	const Chaussures = Products.filter(p => p.category === 'Chaussure')
+	const Sacs = Products.filter(p => p.category === 'Sacs')
 	
   return (
     <div className="product-area section">
@@ -28,9 +35,10 @@ const Electromenager = () => {
 									
 									<li className="nav-item"><a className="nav-link active" data-toggle="tab" href="#man" role="tab">Nuisettes</a></li>
 									<li className="nav-item"><a className="nav-link" data-toggle="tab" href="#women" role="tab">Robes</a></li>
-									<li className="nav-item"><a className="nav-link" data-toggle="tab" href="#kids" role="tab">Sacs</a></li>
-									<li className="nav-item"><a className="nav-link" data-toggle="tab" href="#accessories" role="tab">Chaussures</a></li>
-									<li className="nav-item"><a className="nav-link" data-toggle="tab" href="#accessories" role="tab">Cosmétiques</a></li>
+									<li className="nav-item"><a className="nav-link" data-toggle="tab" href="#shorts" role="tab">Shorts</a></li>
+									<li className="nav-item"><a className="nav-link" data-toggle="tab" href="#cosmetique" role="tab">Cosmétiques</a></li>
+									<li className="nav-item"><a className="nav-link" data-toggle="tab" href="#chaussures" role="tab">Chaussures</a></li>
+									<li className="nav-item"><a className="nav-link" data-toggle="tab" href="#sacs" role="tab">Sacs</a></li>
 									
 								</ul>
 								{/*<!--/ End Tab Nav -->*/}
@@ -40,7 +48,7 @@ const Electromenager = () => {
 								<div className="tab-pane fade show active" id="man" role="tabpanel">
 									<div className="tab-single">
 										<div className="row">
-											{Products.map(Product => (
+											{Nuisettes.map(Product => (
 											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
 												
 												<div className="single-product">
@@ -84,12 +92,14 @@ const Electromenager = () => {
 								<div className="tab-pane fade" id="women" role="tabpanel">
 									<div className="tab-single">
 										<div className="row">
-											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
+											{Robes.map(r =>(
+
+											<div className="col-xl-3 col-lg-4 col-md-4 col-12" key={r.id}>
 												<div className="single-product">
 													<div className="product-img">
 														<Link to="product-details.html">
-															<img className="default-img" src="https://i2.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/1-2021-04-10T141519.202.jpg?fit=680%2C680&ssl=1" alt="#" />
-															<img className="hover-img" src="https://i2.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/1-2021-04-10T141519.202.jpg?fit=680%2C680&ssl=1" alt="#" />
+															<img className="default-img" src={r.image} style={style} alt={r.name}/>
+															<img className="hover-img" src={r.image}  style={style} alt={r.name}/>
 														</Link>
 														<div className="button-head">
 															<div className="product-action">
@@ -103,19 +113,31 @@ const Electromenager = () => {
 														</div>
 													</div>
 													<div className="product-content">
-														<h3><Link to="product-details.html">3 pièces Théière en Aluminium – 1 Litres,700ml et 500ml</Link></h3>
+														<h3><Link to="product-details.html">{r.name}</Link></h3>
 														<div className="product-price">
-															<span>9000FCFA</span>
+															<span>{r.price}FCFA</span>
 														</div>
 													</div>
 												</div>
 											</div>
+											))}
+									
+										</div>
+									</div>
+								</div>
+								{/*<!--/ End Single Tab -->*/}
+								{/*<!-- Start Single Tab -->*/}
+								<div className="tab-pane fade" id="shorts" role="tabpanel">
+									<div className="tab-single">
+										<div className="row">
+											{Shorts.map(s => (
+
 											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
 												<div className="single-product">
 													<div className="product-img">
 														<Link to="product-details.html">
-															<img className="default-img" src="https://i1.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/1-95.jpg?fit=500%2C500&ssl=1" alt="#" />
-															<img className="hover-img" src="https://i1.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/1-95.jpg?fit=500%2C500&ssl=1" alt="#" />
+															<img className="default-img" src={s.image} style={style}alt={s.name}  />
+															<img className="hover-img" src={s.image}   style={style}alt={s.name}  />
 														</Link>
 														<div className="button-head">
 															<div className="product-action">
@@ -129,164 +151,32 @@ const Electromenager = () => {
 														</div>
 													</div>
 													<div className="product-content">
-														<h3><Link to="product-details.html">6 Tasse Petit Déjeuner en Verre – 35 ml</Link></h3>
+														<h3><Link to="product-details.html">{s.name} </Link></h3>
 														<div className="product-price">
-															<span>4500FCFA</span>
+															<span>{s.price}FCFA</span>
 														</div>
 													</div>
 												</div>
 											</div>
-											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div className="single-product">
-													<div className="product-img">
-														<Link to="product-details.html">
-															<img className="default-img" src="https://i0.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/1-2020-12-24T183651.297.jpg?fit=500%2C500&ssl=1" alt="#" />
-															<img className="hover-img" src="https://i0.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/1-2020-12-24T183651.297.jpg?fit=500%2C500&ssl=1" alt="#" />
-														</Link>
-														<div className="button-head">
-															<div className="product-action">
-																<Link data-toggle="modal" data-target="#exampleModal" title="Quick View" to="#"><i className=" ti-eye"></i><span>Acheter</span></Link>
-																<Link title="Wishlist" to="#"><i className=" ti-heart "></i><span>Pour plus tard</span></Link>
-																
-															</div>
-															<div className="product-action-2">
-																<Link title="Add to cart" to="#">Ajouter au panier</Link>
-															</div>
-														</div>
-													</div>
-													<div className="product-content">
-														<h3><Link to="product-details.html">Couscoussier italia en inox 6 litres</Link></h3>
-														<div className="product-price">
-															<span>12000FCFA</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div className="single-product">
-													<div className="product-img">
-														<Link to="product-details.html">
-															<img className="default-img" src="https://i0.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/41A4Buoc3BL.jpg?fit=500%2C314&ssl=1" alt="#" />
-															<img className="hover-img" src="https://i0.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/41A4Buoc3BL.jpg?fit=500%2C314&ssl=1" alt="#" />
-															<span className="new">New</span>
-														</Link>
-														<div className="button-head">
-															<div className="product-action">
-																<Link data-toggle="modal" data-target="#exampleModal" title="Quick View" to="#"><i className=" ti-eye"></i><span>Acheter</span></Link>
-																<Link title="Wishlist" to="#"><i className=" ti-heart "></i><span>Pour plus tard</span></Link>
-																
-															</div>
-															<div className="product-action-2">
-																<Link title="Add to cart" to="#">Ajouter au panier</Link>
-															</div>
-														</div>
-													</div>
-													<div className="product-content">
-														<h3><Link to="product-details.html">Poêle Antiadhésif 28 cm</Link></h3>
-														<div className="product-price">
-															<span>12000FCFA</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
+											))}
 											
-											</div>
-											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div className="single-product">
-													<div className="product-img">
-														<Link to="product-details.html">
-															<img className="default-img" src="https://i0.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/2-22.jpg?fit=500%2C500&ssl=1" alt="#" />
-															<img className="hover-img" src="https://i0.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/2-22.jpg?fit=500%2C500&ssl=1" alt="#" />
-															<span className="price-dec">30% Off</span>
-														</Link>
-														<div className="button-head">
-															<div className="product-action">
-																<Link data-toggle="modal" data-target="#exampleModal" title="Quick View" to="#"><i className=" ti-eye"></i><span>Acheter</span></Link>
-																<Link title="Wishlist" to="#"><i className=" ti-heart "></i><span>Pour plus tard</span></Link>
-																
-															</div>
-															<div className="product-action-2">
-																<Link title="Add to cart" to="#">Ajouter au panier</Link>
-															</div>
-														</div>
-													</div>
-													<div className="product-content">
-														<h3><Link to="product-details.html">Égouttoir vaisselle 2 couches en acier inoxydable</Link></h3>
-														<div className="product-price">
-															<span>7900FCFA</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div className="single-product">
-													<div className="product-img">
-														<Link to="product-details.html">
-															<img className="default-img" src="https://i0.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/1-2020-12-24T111724.772.jpg?fit=500%2C500&ssl=1" alt="#" />
-															<img className="hover-img" src="https://i0.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/1-2020-12-24T111724.772.jpg?fit=500%2C500&ssl=1" alt="#" />
-														</Link>
-														<div className="button-head">
-															<div className="product-action">
-																<Link data-toggle="modal" data-target="#exampleModal" title="Quick View" to="#"><i className=" ti-eye"></i><span>Acheter</span></Link>
-																<Link title="Wishlist" to="#"><i className=" ti-heart "></i><span>Pour plus tard</span></Link>
-																
-															</div>
-															<div className="product-action-2">
-																<Link title="Add to cart" to="#">Ajouter au panier</Link>
-															</div>
-														</div>
-													</div>
-													<div className="product-content">
-														<h3><Link to="product-details.html">Blender Mixeur – 1.5L</Link></h3>
-														<div className="product-price">
-															<span>25000FCFA</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div className="single-product">
-													<div className="product-img">
-														<Link to="product-details.html">
-															<img className="default-img" src="https://i1.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/H23274442e9d948b59822eef92f5b5100I.jpg?fit=800%2C800&ssl=1" alt="#" />
-															<img className="hover-img" src="https://i1.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/H23274442e9d948b59822eef92f5b5100I.jpg?fit=800%2C800&ssl=1" alt="#" />
-															<span className="out-of-stock">Hot</span>
-														</Link>
-														<div className="button-head">
-															<div className="product-action">
-																<Link data-toggle="modal" data-target="#exampleModal" title="Quick View" to="#"><i className=" ti-eye"></i><span>Acheter</span></Link>
-																<Link title="Wishlist" to="#"><i className=" ti-heart "></i><span>Pour plus tard</span></Link>
-																
-															</div>
-															<div className="product-action-2">
-																<Link title="Add to cart" to="#">Ajouter au panier</Link>
-															</div>
-														</div>
-													</div>
-													<div className="product-content">
-														<h3><Link to="product-details.html">pack de 13 spatules</Link></h3>
-														<div className="product-price">
-															<span className="old">11000FCFA</span>
-															<span>9900FCFA</span>
-														</div>
-													</div>
-												</div>
-											</div>
+										
 										</div>
 									</div>
 								</div>
 								{/*<!--/ End Single Tab -->*/}
 								{/*<!-- Start Single Tab -->*/}
-								<div className="tab-pane fade" id="kids" role="tabpanel">
+								<div className="tab-pane fade" id="cosmetique" role="tabpanel">
 									<div className="tab-single">
 										<div className="row">
-											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
+												{Cosmetiques.map(c=> (
+
+											<div className="col-xl-3 col-lg-4 col-md-4 col-12" key={c.id}>
 												<div className="single-product">
 													<div className="product-img">
 														<Link to="product-details.html">
-															<img className="default-img" src="https://i2.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/8f2bcea9-6d7c-4753-8555-c21239385920.jpg?fit=1440%2C1080&ssl=1" alt="#" />
-															<img className="hover-img" src="https://i2.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/8f2bcea9-6d7c-4753-8555-c21239385920.jpg?fit=1440%2C1080&ssl=1" alt="#" />
+															<img className="default-img" src={c.image}  style={style} alt={c.name} />
+															<img className="hover-img" src={c.image} style={style}  alt={c.name} />
 														</Link>
 														<div className="button-head">
 															<div className="product-action">
@@ -300,213 +190,32 @@ const Electromenager = () => {
 														</div>
 													</div>
 													<div className="product-content">
-														<h3><Link to="product-details.html">Armoire à deux battants </Link></h3>
+														<h3><Link to="product-details.html">{c.name}</Link></h3>
 														<div className="product-price">
-															<span>45000FCFA</span>
+															<span>{c.price}FCFA </span>
 														</div>
 													</div>
 												</div>
 											</div>
-											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div className="single-product">
-													<div className="product-img">
-														<Link to="product-details.html">
-															<img className="default-img" src="https://i0.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/HTB1pGUDKVXXXXamXXXXq6xXFXXX8.jpg_q50.jpg?fit=622%2C722&ssl=1" alt="#" />
-															<img className="hover-img" src="https://i0.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/HTB1pGUDKVXXXXamXXXXq6xXFXXX8.jpg_q50.jpg?fit=622%2C722&ssl=1" alt="#" />
-														</Link>
-														<div className="button-head">
-															<div className="product-action">
-																<Link data-toggle="modal" data-target="#exampleModal" title="Quick View" to="#"><i className=" ti-eye"></i><span>Acheter</span></Link>
-																<Link title="Wishlist" to="#"><i className=" ti-heart "></i><span>Pour plus tard</span></Link>
-																
-															</div>
-															<div className="product-action-2">
-																<Link title="Add to cart" to="#">Ajouter au panier</Link>
-															</div>
-														</div>
-													</div>
-													<div className="product-content">
-														<h3><Link to="product-details.html">Armoire de rangement Plastique 4 Battants</Link></h3>
-														<div className="product-price">
-															<span>45000FCFA</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div className="single-product">
-													<div className="product-img">
-														<Link to="product-details.html">
-															<img className="default-img" src="https://i0.wp.com/www.mondialevaise.com/wp-content/uploads/2021/10/d9a699e0-e643-42b0-8db0-1d1413035584.jpg?fit=540%2C540&ssl=1" alt="#" />
-															<img className="hover-img" src="https://i0.wp.com/www.mondialevaise.com/wp-content/uploads/2021/10/d9a699e0-e643-42b0-8db0-1d1413035584.jpg?fit=540%2C540&ssl=1" alt="#" />
-														</Link>
-														<div className="button-head">
-															<div className="product-action">
-																<Link data-toggle="modal" data-target="#exampleModal" title="Quick View" to="#"><i className=" ti-eye"></i><span>Acheter</span></Link>
-																<Link title="Wishlist" to="#"><i className=" ti-heart "></i><span>Pour plus tard</span></Link>
-																
-															</div>
-															<div className="product-action-2">
-																<Link title="Add to cart" to="#">Ajouter au panier</Link>
-															</div>
-														</div>
-													</div>
-													<div className="product-content">
-														<h3><Link to="product-details.html">armoire 4 battants noir blanc avec double range chaussure</Link></h3>
-														<div className="product-price">
-															<span>50000FCFA</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div className="single-product">
-													<div className="product-img">
-														<Link to="product-details.html">
-															<img className="default-img" src="https://i1.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/3.jpg?fit=500%2C500&ssl=1" alt="#" />
-															<img className="hover-img" src="https://i1.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/3.jpg?fit=500%2C500&ssl=1" alt="#" />
-															<span className="new">New</span>
-														</Link>
-														<div className="button-head">
-															<div className="product-action">
-																<Link data-toggle="modal" data-target="#exampleModal" title="Quick View" to="#"><i className=" ti-eye"></i><span>Acheter</span></Link>
-																<Link title="Wishlist" to="#"><i className=" ti-heart "></i><span>Pour plus tard</span></Link>
-																
-															</div>
-															<div className="product-action-2">
-																<Link title="Add to cart" to="#">Ajouter au panier</Link>
-															</div>
-														</div>
-													</div>
-													<div className="product-content">
-														<h3><Link to="product-details.html">Armoire de rangement Plastique 4 Battants</Link></h3>
-														<div className="product-price">
-															<span>45000FCFA</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div className="single-product">
-													<div className="product-img">
-														<Link to="product-details.html">
-															<img className="default-img" src="https://i0.wp.com/www.mondialevaise.com/wp-content/uploads/2021/10/d9a699e0-e643-42b0-8db0-1d1413035584.jpg?fit=540%2C540&ssl=1" alt="#" />
-															<img className="hover-img" src="https://i0.wp.com/www.mondialevaise.com/wp-content/uploads/2021/10/d9a699e0-e643-42b0-8db0-1d1413035584.jpg?fit=540%2C540&ssl=1" alt="#" />
-														</Link>
-														<div className="button-head">
-															<div className="product-action">
-																<Link data-toggle="modal" data-target="#exampleModal" title="Quick View" to="#"><i className=" ti-eye"></i><span>Acheter</span></Link>
-																<Link title="Wishlist" to="#"><i className=" ti-heart "></i><span>Pour plus tard</span></Link>
-																
-															</div>
-															<div className="product-action-2">
-																<Link title="Add to cart" to="#">Ajouter au panier</Link>
-															</div>
-														</div>
-													</div>
-													<div className="product-content">
-														<h3><Link to="product-details.html">armoire 4 battants noir blanc avec double range chaussure</Link></h3>
-														<div className="product-price">
-															<span>50000FCFA</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div className="single-product">
-													<div className="product-img">
-														<Link to="product-details.html">
-															<img className="default-img" src="https://i1.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/3.jpg?fit=500%2C500&ssl=1" alt="#" />
-															<img className="hover-img" src="https://i1.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/3.jpg?fit=500%2C500&ssl=1" alt="#" />
-															<span className="price-dec">30% Off</span>
-														</Link>
-														<div className="button-head">
-															<div className="product-action">
-																<Link data-toggle="modal" data-target="#exampleModal" title="Quick View" to="#"><i className=" ti-eye"></i><span>Acheter</span></Link>
-																<Link title="Wishlist" to="#"><i className=" ti-heart "></i><span>Pour plus tard</span></Link>
-																
-															</div>
-															<div className="product-action-2">
-																<Link title="Add to cart" to="#">Ajouter au panier</Link>
-															</div>
-														</div>
-													</div>
-													<div className="product-content">
-														<h3><Link to="product-details.html">Armoire de rangement Plastique 4 Battants</Link></h3>
-														<div className="product-price">
-															<span>45000FCFA</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div className="single-product">
-													<div className="product-img">
-														<Link to="product-details.html">
-															<img className="default-img" src="https://i0.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/HTB1pGUDKVXXXXamXXXXq6xXFXXX8.jpg_q50.jpg?fit=622%2C722&ssl=1" alt="#" />
-															<img className="hover-img" src="https://i0.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/HTB1pGUDKVXXXXamXXXXq6xXFXXX8.jpg_q50.jpg?fit=622%2C722&ssl=1" alt="#" />
-														</Link>
-														<div className="button-head">
-															<div className="product-action">
-																<Link data-toggle="modal" data-target="#exampleModal" title="Quick View" to="#"><i className=" ti-eye"></i><span>Acheter</span></Link>
-																<Link title="Wishlist" to="#"><i className=" ti-heart "></i><span>Pour plus tard</span></Link>
-																
-															</div>
-															<div className="product-action-2">
-																<Link title="Add to cart" to="#">Ajouter au panier</Link>
-															</div>
-														</div>
-													</div>
-													<div className="product-content">
-														<h3><Link to="product-details.html">Armoire de rangement Plastique 4 Battants</Link></h3>
-														<div className="product-price">
-															<span>45000FCFA</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div className="single-product">
-													<div className="product-img">
-														<Link to="product-details.html">
-															<img className="default-img" src="https://i0.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/9e5065ef-e3f4-48a8-b943-e5505ae180dc.jpg?fit=1440%2C1080&ssl=1" alt="#" />
-															<img className="hover-img" src="https://i0.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/9e5065ef-e3f4-48a8-b943-e5505ae180dc.jpg?fit=1440%2C1080&ssl=1" alt="#" />
-															<span className="out-of-stock">Hot</span>
-														</Link>
-														<div className="button-head">
-															<div className="product-action">
-																<Link data-toggle="modal" data-target="#exampleModal" title="Quick View" to="#"><i className=" ti-eye"></i><span>Acheter</span></Link>
-																<Link title="Wishlist" to="#"><i className=" ti-heart "></i><span>Pour plus tard</span></Link>
-																
-															</div>
-															<div className="product-action-2">
-																<Link title="Add to cart" to="#">Ajouter au panier</Link>
-															</div>
-														</div>
-													</div>
-													<div className="product-content">
-														<h3><Link to="product-details.html">Armoire Etagère Modulable</Link></h3>
-														<div className="product-price">
-															<span className="old">30000FCFA</span>
-															<span>28000FCFA</span>
-														</div>
-													</div>
-												</div>
-											</div>
+												))}
+										
+
 										</div>
 									</div>
 								</div>
 								{/*<!--/ End Single Tab -->*/}
 								{/*<!-- Start Single Tab -->*/}
-								<div className="tab-pane fade" id="accessories" role="tabpanel">
+								<div className="tab-pane fade" id="chaussures" role="tabpanel">
 									<div className="tab-single">
 										<div className="row">
+											{Chaussures.map(ch => (
+
 											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
 												<div className="single-product">
 													<div className="product-img">
 														<Link to="product-details.html">
-															<img className="default-img" src="https://i1.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/1-2020-12-22T120848.748.jpg?fit=500%2C500&ssl=1" alt="#" />
-															<img className="hover-img" src="https://i1.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/1-2020-12-22T120848.748.jpg?fit=500%2C500&ssl=1" alt="#" />
+															<img className="default-img" src={ch.image} style={style} alt={ch.name} />
+															<img className="hover-img" src={ch.image} style={style} alt={ch.name}/>
 														</Link>
 														<div className="button-head">
 															<div className="product-action">
@@ -520,19 +229,33 @@ const Electromenager = () => {
 														</div>
 													</div>
 													<div className="product-content">
-														<h3><Link to="product-details.html">Range Chaussures -12 Paires</Link></h3>
+														<h3><Link to="product-details.html">{ch.name}</Link></h3>
 														<div className="product-price">
-															<span>5900FCFA </span>
+															<span>{ch.price}FCFA </span>
 														</div>
 													</div>
 												</div>
 											</div>
-											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
+											))}
+										
+										
+
+										</div>
+									</div>
+								</div>
+								{/*<!--/ End Single Tab -->*/}
+								{/*<!-- Start Single Tab -->*/}
+								<div className="tab-pane fade" id="sacs" role="tabpanel">
+									<div className="tab-single">
+										<div className="row">
+											{Sacs.map(sa => (
+
+											<div className="col-xl-3 col-lg-4 col-md-4 col-12" key={sa.id}>
 												<div className="single-product">
 													<div className="product-img">
 														<Link to="product-details.html">
-															<img className="default-img" src="https://i1.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/1-2020-12-22T115943.571.jpg?fit=500%2C500&ssl=1" alt="#" />
-															<img className="hover-img" src="https://i1.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/1-2020-12-22T115943.571.jpg?fit=500%2C500&ssl=1" alt="#" />
+															<img className="default-img" src={sa.image}   style={style}   alt={sa.name} />
+															<img className="hover-img" src={sa.image}   style={style}alt={sa.name} />
 														</Link>
 														<div className="button-head">
 															<div className="product-action">
@@ -546,119 +269,15 @@ const Electromenager = () => {
 														</div>
 													</div>
 													<div className="product-content">
-														<h3><Link to="product-details.html">Range Chaussures – Double Cabine – 36 paires – Bleu</Link></h3>
+														<h3><Link to="product-details.html">{sa.name}</Link></h3>
 														<div className="product-price">
-															<span>12900FCFA</span>
+															<span>{sa.price}FCFA </span>
 														</div>
 													</div>
 												</div>
 											</div>
-											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div className="single-product">
-													<div className="product-img">
-														<Link to="product-details.html">
-															<img className="default-img" src="https://i1.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/1-2020-12-24T125040.711.jpg?fit=500%2C500&ssl=1" alt="#" />
-															<img className="hover-img" src="https://i1.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/1-2020-12-24T125040.711.jpg?fit=500%2C500&ssl=1" alt="#" />
-														</Link>
-														<div className="button-head">
-															<div className="product-action">
-																<Link data-toggle="modal" data-target="#exampleModal" title="Quick View" to="#"><i className=" ti-eye"></i><span>Acheter</span></Link>
-																<Link title="Wishlist" to="#"><i className=" ti-heart "></i><span>Pour plus tard</span></Link>
-																
-															</div>
-															<div className="product-action-2">
-																<Link title="Add to cart" to="#">Ajouter au panier</Link>
-															</div>
-														</div>
-													</div>
-													<div className="product-content">
-														<h3><Link to="product-details.html">Range Chaussures – 5 Étagères – Rouge Bordeaux</Link></h3>
-														<div className="product-price">
-															<span>9900FCFA </span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div className="single-product">
-													<div className="product-img">
-														<Link to="product-details.html">
-															<img className="default-img" src="https://i2.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/2-2-1.jpg?fit=500%2C500&ssl=1" alt="#" />
-															<img className="hover-img" src="https://i2.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/2-2-1.jpg?fit=500%2C500&ssl=1" alt="#" />
-															<span className="new">New</span>
-														</Link>
-														<div className="button-head">
-															<div className="product-action">
-																<Link data-toggle="modal" data-target="#exampleModal" title="Quick View" to="#"><i className=" ti-eye"></i><span>Acheter</span></Link>
-																<Link title="Wishlist" to="#"><i className=" ti-heart "></i><span>Pour plus tard</span></Link>
-																
-															</div>
-															<div className="product-action-2">
-																<Link title="Add to cart" to="#">Ajouter au panier</Link>
-															</div>
-														</div>
-													</div>
-													<div className="product-content">
-														<h3><Link to="product-details.html">rmoire à Chaussures Meuble de Rangement pour 24 Paires</Link></h3>
-														<div className="product-price">
-															<span>22900FCFA</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div className="single-product">
-													<div className="product-img">
-														<Link to="product-details.html">
-															<img className="default-img" src="https://i1.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/Hf39395a1307a4738a333df713a349e46e-1.jpg_q50-1.jpg?fit=1000%2C1000&ssl=1" alt="#" />
-															<img className="hover-img" src="https://i1.wp.com/www.mondialevaise.com/wp-content/uploads/2021/06/Hf39395a1307a4738a333df713a349e46e-1.jpg_q50-1.jpg?fit=1000%2C1000&ssl=1" alt="#" />
-														</Link>
-														<div className="button-head">
-															<div className="product-action">
-																<Link data-toggle="modal" data-target="#exampleModal" title="Quick View" to="#"><i className=" ti-eye"></i><span>Acheter</span></Link>
-																<Link title="Wishlist" to="#"><i className=" ti-heart "></i><span>Pour plus tard</span></Link>
-																
-															</div>
-															<div className="product-action-2">
-																<Link title="Add to cart" to="#">Ajouter au panier</Link>
-															</div>
-														</div>
-													</div>
-													<div className="product-content">
-														<h3><Link to="product-details.html">Armoire de Rangement de Chaussures – 36 Paires – Rouge Bordeaux</Link></h3>
-														<div className="product-price">
-															<span>13900FCFA</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
-												<div className="single-product">
-													<div className="product-img">
-														<Link to="product-details.html">
-															<img className="default-img" src="https://i1.wp.com/www.mondialevaise.com/wp-content/uploads/2021/10/15554f25-0881-4651-8e8c-374c990ad870.jpg?fit=720%2C720&ssl=10" alt="#" />
-															<img className="hover-img" src="https://i1.wp.com/www.mondialevaise.com/wp-content/uploads/2021/10/15554f25-0881-4651-8e8c-374c990ad870.jpg?fit=720%2C720&ssl=1" alt="#" />
-															<span className="price-dec">30% Off</span>
-														</Link>
-														<div className="button-head">
-															<div className="product-action">
-																<Link data-toggle="modal" data-target="#exampleModal" title="Quick View" to="#"><i className=" ti-eye"></i><span>Acheter</span></Link>
-																<Link title="Wishlist" to="#"><i className=" ti-heart "></i><span>Pour plus tard</span></Link>
-																
-															</div>
-															<div className="product-action-2">
-																<Link title="Add to cart" to="#">Ajouter au panier</Link>
-															</div>
-														</div>
-													</div>
-													<div className="product-content">
-														<h3><Link to="product-details.html">armoire 4battants blanc avec double range chaussure</Link></h3>
-														<div className="product-price">
-															<span>50000FCFA </span>
-														</div>
-													</div>
-												</div>
-											</div>
+											))}
+										
 
 										</div>
 									</div>

@@ -33,20 +33,26 @@ const Footer = () => {
             <div className='col-lg-2 col-md-6 col-12'>
               {/* Single Widget */}
               <div className='single-footer links'>
-                <h4>Information</h4>
+                <h4>Produits</h4>
                 <ul>
                   <li>
-                    <Link to='#'>A propos de nous</Link>
+                    <Link to='#'>Robes</Link>
                   </li>
 
                   <li>
-                    <Link to='#'>Termes & Conditions</Link>
+                    <Link to='#'>Nuisettes</Link>
                   </li>
                   <li>
-                    <Link to='#'>Contacts</Link>
+                    <Link to='#'>Shorts</Link>
                   </li>
                   <li>
-                    <Link to='#'>Aide</Link>
+                    <Link to='#'>Cosmétiques</Link>
+                  </li>
+                  <li>
+                    <Link to='#'>Sacs</Link>
+                  </li>
+                  <li>
+                    <Link to='#'>Chaussures</Link>
                   </li>
                 </ul>
               </div>

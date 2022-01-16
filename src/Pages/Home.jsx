@@ -8,16 +8,16 @@ import ShopServices from '../components/ShopServices';
 
 
 
-import Electromenager from './Products'
-import Cuisine from './Cuisine'
-import Armoires from './Armoires'
+
+import Robes from './Robes'
+import Shorts from './Shorts'
 import Nuisettes from './Nuisette'
 
 
-import Chics from "../Pages/Chics"
-import EnVogue from "../Pages/EnVogue"
+
+// import EnVogue from "../Pages/EnVogue"
 import {Link} from 'react-router-dom'
-import Bambinos from './Bambinos';
+import Cosmetiques from './Cosmetiques';
 
 
 
@@ -78,13 +78,13 @@ const Home = () => {
 		</div>
 	</section>
   
-      <Electromenager />
-			<Cuisine />
-			<Armoires />
+      <Nuisettes />
+			<Robes />
+			<Shorts />
 			<Nuisettes /> 
-			<Bambinos />
-      <Chics />
-      <EnVogue />
+			<Cosmetiques />
+      
+      {/* <EnVogue /> */}
       <ShopServices />
 			{/* Whattsapp button */}
 			<div class="whatsapp">
