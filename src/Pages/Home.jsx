@@ -18,6 +18,8 @@ import Nuisettes from './Nuisette'
 // import EnVogue from "../Pages/EnVogue"
 import {Link} from 'react-router-dom'
 import Cosmetiques from './Cosmetiques';
+import Soutiens from './Soutiens';
+import Parfums from './Parfums';
 
 
 
@@ -83,6 +85,9 @@ const Home = () => {
 			<Shorts />
 			<Nuisettes /> 
 			<Cosmetiques />
+			<Soutiens />
+			<Parfums />
+
       
       {/* <EnVogue /> */}
       <ShopServices />

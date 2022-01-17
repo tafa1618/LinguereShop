@@ -245,6 +245,294 @@ const Products = [
     category: 'Coesmétique',
     price: 10000,
   },
+  {
+    id: '29',
+    name: 'Cuissard coton ',
+    image:
+      'https://i.ibb.co/YBfPy0r/Whats-App-Image-2022-01-16-at-14-04-40.jpg',
+    description: 'Couleurs ( Noire-Gris-Beige )   Taille L Xl et xxl',
+    category: 'Short',
+    price: 1000,
+  },
+  {
+    id: '30',
+    name: 'Cuissard coton ',
+    image:
+      'https://i.ibb.co/vZgG2Lh/Whats-App-Image-2022-01-16-at-14-04-37-1.jpg',
+    description: 'Couleurs ( Noire-Gris-Beige )   Taille L Xl et xxl',
+    category: 'Short',
+    price: 1000,
+  },
+  {
+    id: '31',
+    name: 'Cuissard coton ',
+    image:
+      'https://i.ibb.co/f2gGwcz/Whats-App-Image-2022-01-16-at-14-04-37.jpg',
+    description: 'Couleurs ( Noire-Gris-Beige )   Taille L Xl et xxl',
+    category: 'Short',
+    price: 1000,
+  },
+  {
+    id: '32',
+    name: 'Cuissard coton ',
+    image:
+      'https://i.ibb.co/SyvRTTw/Whats-App-Image-2022-01-16-at-14-04-42.jpg',
+    description: 'Couleurs ( Noire-Gris-Beige )   Taille L Xl et xxl',
+    category: 'Short',
+    price: 1000,
+  },
+  {
+    id: '33',
+    name: 'Cuissard coton ',
+    image:
+      'https://i.ibb.co/8KRQhCL/Whats-App-Image-2022-01-16-at-14-04-41.jpg',
+    description: 'Couleurs ( Noire-Gris-Beige )   Taille L Xl et xxl',
+    category: 'Short',
+    price: 1000,
+  },
+  {
+    id: '34',
+    name: 'Soutien Tafs ',
+    image:
+      'https://i.ibb.co/ZWZkgvv/Whats-App-Image-2022-01-14-at-16-16-42-1.jpg',
+    description: 'Soutiens tafs new design ',
+    category: 'Soutien',
+    price: 3500,
+  },
+  {
+    id: '35',
+    name: 'Soutien Tafs ',
+    image:
+      'https://i.ibb.co/mXLFzLL/Whats-App-Image-2022-01-14-at-16-16-41.jpg',
+    description: 'Soutiens tafs new design ',
+    category: 'Soutien',
+    price: 3500,
+  },
+  {
+    id: '36',
+    name: 'Soutien Tafs ',
+    image:
+      'https://i.ibb.co/sRv86NH/Whats-App-Image-2022-01-14-at-16-16-44-1.jpg',
+    description: 'Soutiens tafs new design ',
+    category: 'Soutien',
+    price: 3500,
+  },
+  {
+    id: '37',
+    name: 'Soutien Tafs ',
+    image:
+      'https://i.ibb.co/mqMYVw7/Whats-App-Image-2022-01-14-at-16-16-43.jpg',
+    description: 'Soutiens tafs new design ',
+    category: 'Soutien',
+    price: 3500,
+  },
+  {
+    id: '37',
+    name: 'Soutien Confort ',
+    image:
+      'https://i.ibb.co/8PMs3Wd/Whats-App-Image-2022-01-14-at-16-14-30.jpg',
+    description: 'Soutiens original très confortable ',
+    category: 'Soutien',
+    price: 2500,
+  },
+  {
+    id: '38',
+    name: 'Soutien Confort ',
+    image:
+      'https://i.ibb.co/w4KC7Kc/Whats-App-Image-2022-01-14-at-16-14-26.jpg',
+    description: 'Soutiens original très confortable ',
+    category: 'Soutien',
+    price: 2500,
+  },
+  {
+    id: '39',
+    name: 'Soutien Confort ',
+    image:
+      'https://i.ibb.co/59KM8Zh/Whats-App-Image-2022-01-14-at-16-14-31.jpg',
+    description: 'Soutiens original très confortable ',
+    category: 'Soutien',
+    price: 2500,
+  },
+  {
+    id: '40',
+    name: 'Soutien Confort ',
+    image:
+      'https://i.ibb.co/SP5WdhH/Whats-App-Image-2022-01-14-at-16-14-30-1.jpg',
+    description: 'Soutiens original très confortable ',
+    category: 'Soutien',
+    price: 2500,
+  },
+  {
+    id: '41',
+    name: 'Madona avec croisè derrière ',
+    image:
+      'https://i.ibb.co/HqbD2YS/Whats-App-Image-2022-01-14-at-15-51-23.jpg',
+    description: 'Madona qualité original avec croisè derrière  ',
+    category: 'Soutien',
+    price: 3500,
+  },
+  {
+    id: '42',
+    name: 'Madona avec croisè derrière ',
+    image:
+      'https://i.ibb.co/sPDJJVr/Whats-App-Image-2022-01-14-at-15-51-31.jpg',
+    description: 'Madona qualité original avec croisè derrière  ',
+    category: 'Soutien',
+    price: 3500,
+  },
+  {
+    id: '43',
+    name: 'Madona avec croisè derrière ',
+    image:
+      'https://i.ibb.co/fkcrxff/Whats-App-Image-2022-01-14-at-15-51-25.jpg',
+    description: 'Madona qualité original avec croisè derrière  ',
+    category: 'Soutien',
+    price: 3500,
+  },
+  {
+    id: '44',
+    name: 'Madona avec croisè derrière ',
+    image:
+      'https://i.ibb.co/6RPdBMp/Whats-App-Image-2022-01-14-at-15-51-26.jpg',
+    description: 'Madona qualité original avec croisè derrière  ',
+    category: 'Soutien',
+    price: 3500,
+  },
+  {
+    id: '46',
+    name: 'Mousse de Massage ',
+    image:
+      'https://i.ibb.co/B6dPgvX/Whats-App-Image-2022-01-02-at-19-46-55.jpg',
+    description: 'Thouray doré  ',
+    category: 'Parfum',
+    price: 10000,
+  },
+  {
+    id: '47',
+    name: 'Miel Love ',
+    image:
+      'https://i.ibb.co/4PWChF1/Whats-App-Image-2022-01-02-at-20-02-30.jpg',
+    description: 'Miel Love ',
+    category: 'Parfum',
+    price: 2500,
+  },
+  {
+    id: '47',
+    name: 'Vimax et Imax Power ',
+    image:
+      'https://i.ibb.co/zFHgcpQ/Whats-App-Image-2022-01-13-at-12-12-05-1.jpg',
+    description: 'Vimax et Imax Power',
+    category: 'Parfum',
+    price: 3500,
+  },
+  {
+    id: '48',
+    name: 'Vimax et Imax Power ',
+    image:
+      'https://i.ibb.co/WDh2Ftm/Whats-App-Image-2022-01-13-at-12-12-05.jpg',
+    description: 'Vimax et Imax Power',
+    category: 'Parfum',
+    price: 3500,
+  },
+  {
+    id: '49',
+    name: 'Vimax et Imax Power ',
+    image:
+      'https://i.ibb.co/vBXkTLG/Whats-App-Image-2022-01-13-at-12-12-04-1.jpg',
+    description: 'Vimax et Imax Power',
+    category: 'Parfum',
+    price: 3500,
+  },
+  {
+    id: '50',
+    name: 'Vimax et Imax Power ',
+    image:
+      'https://i.ibb.co/hyLvJcK/Whats-App-Image-2022-01-13-at-12-12-04.jpg',
+    description: 'Vimax et Imax Power',
+    category: 'Parfum',
+    price: 3500,
+  },
+  {
+    id: '51',
+    name: 'Vimax et Imax Power ',
+    image:
+      'https://i.ibb.co/tD3tvqn/Whats-App-Image-2022-01-13-at-12-12-06.jpg',
+    description: 'Vimax et Imax Power',
+    category: 'Parfum',
+    price: 3500,
+  },
+  {
+    id: '52',
+    name: 'Huile Fénugré Akpi',
+    image:
+      'https://i.ibb.co/tsxF45N/Whats-App-Image-2022-01-02-at-20-35-50.jpg',
+    description: 'Vimax et Imax Power',
+    category: 'Parfum',
+    price: 6000,
+  },
+  {
+    id: '53',
+    name: 'Gant de Massage',
+    image:
+      'https://i.ibb.co/ZhYP3Fn/Whats-App-Image-2022-01-03-at-12-10-09.jpg',
+    description: 'Gant de Massage',
+    category: 'Parfum',
+    price: 2500,
+  },
+  {
+    id: '54',
+    name: 'Gant de Massage',
+    image:
+      'https://i.ibb.co/SBj4Kh2/Whats-App-Image-2022-01-03-at-12-10-08.jpg',
+    description: 'Gant de Massage',
+    category: 'Parfum',
+    price: 2500,
+  },
+  {
+    id: '55',
+    name: 'Déo active',
+    image:
+      'https://i.ibb.co/3BSBZFv/Whats-App-Image-2022-01-03-at-13-51-48.jpg',
+    description: 'Déo Active',
+    category: 'Parfum',
+    price: 2500,
+  },
+  {
+    id: '56',
+    name: 'Gamme parfum 3 pièces',
+    image:
+      'https://i.ibb.co/kcjBgTB/Whats-App-Image-2022-01-03-at-14-02-43.jpg',
+    description: 'Gamme parfum 3 pièces',
+    category: 'Parfum',
+    price: 10000,
+  },
+  {
+    id: '57',
+    name: 'Gamme parfum 3 pièces',
+    image:
+      'https://i.ibb.co/K6799jQ/Whats-App-Image-2022-01-03-at-14-02-41.jpg',
+    description: 'Gamme parfum 3 pièces',
+    category: 'Parfum',
+    price: 10000,
+  },
+  {
+    id: '58',
+    name: 'Gamme parfum 3 pièces',
+    image:
+      'https://i.ibb.co/NKBmFgt/Whats-App-Image-2022-01-03-at-14-02-42.jpg',
+    description: 'Gamme parfum 3 pièces',
+    category: 'Parfum',
+    price: 10000,
+  },
+  {
+    id: '59',
+    name: 'Gamme parfum 3 pièces',
+    image:
+      'https://i.ibb.co/1vBTHQ4/Whats-App-Image-2022-01-03-at-14-02-43-1.jpg',
+    description: 'Gamme parfum 3 pièces',
+    category: 'Parfum',
+    price: 10000,
+  },
 ];
 
 export default Products;
