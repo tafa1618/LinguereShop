@@ -14,7 +14,7 @@ const ProductScreen = () => {
   const { id } = useParams()
   const article = Products.find((p)=> p.id === (id))
   
-{/*Style */}
+
 const brand = {
   fontSize: "13px"
 }
@@ -34,7 +34,7 @@ const about ={
 const fa={
   marginRight: "10px"
 }
-{/* End Style */}
+
 
   return (
     <>
