@@ -17,35 +17,20 @@ const ProductScreen = () => {
 {/*Style */}
 const brand = {
   fontSize: "13px"
-};
+}
 const body = {
   width: "100%",
 }
 const actPrice ={
   color: "red",
   fontWeight: 700
-};
+}
 const about ={
   fontSize: "14px"
 }
-const radio ={
-  cursor: "pointer"
-}
-const input ={
-  position: "absolute",
-  top: 0,
-  left: 0,
-  visibility: "hidden",
-  pointerEvents: "none"
-}
-const spaan ={
-  padding: "2px 9px",
-  border: "2px solid #ff0000",
-  display: "inline-block",
-  color: "#ff0000",
-  borderRadius: "3px",
-  textTransform: "uppercase"
-}
+
+
+
 const fa={
   marginRight: "10px"
 }
