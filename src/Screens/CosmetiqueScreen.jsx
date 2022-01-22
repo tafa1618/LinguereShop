@@ -1,37 +1,25 @@
-import React from 'react'
-import Topbar from '../components/Topbar';
-import MiddleInner from '../components/MiddleInner';
-import Footer from '../components/Footer';
-import HeaderInner from '../components/HeaderInner';
-import Hero from '../components/Hero';
-import ShopServices from '../components/ShopServices';
-
-
-
-
-import Robes from './Robes'
-import Shorts from './Shorts'
-import Nuisettes from './Nuisette'
-
-
-
-// import EnVogue from "../Pages/EnVogue"
+import React from 'react';
 import {Link} from 'react-router-dom'
-import Cosmetiques from './Cosmetiques';
-import Soutiens from './Soutiens';
-import Parfums from './Parfums';
+import Cosmetiques from '../Pages/Cosmetiques'
+import Topbar from '../components/Topbar'
+import MiddleInner from '../components/MiddleInner'
+import HeaderInner from '../components/HeaderInner'
+import Hero from '../components/Hero'
+import ShopServices from '../components/ShopServices'
+import Footer from '../components/Footer'
 
 
 
-const Home = () => {
+
+const CosmetiqueScreen = () => {
   const style = {
     width: 350,
     height: 400
   };
+
   return (
     <>
-
-      <header className='header shop'>
+     <header className='header shop'>
         <Topbar />
         <MiddleInner />
         <HeaderInner />
@@ -69,9 +57,9 @@ const Home = () => {
 					<div className="single-banner tab-height">
 						<img src="https://i.ibb.co/CpLbrFn/5.jpg" style={style} alt="#" />
 						<div className="content">
-							<p>Robe</p>
+							<p>Nuisettes</p>
 							
-							<Link to="/robes">Découvrir</Link>
+							<Link to="#">Découvrir</Link>
 						</div>
 					</div>
 				</div>
@@ -80,13 +68,10 @@ const Home = () => {
 		</div>
 	</section>
   
-      <Nuisettes />
-			<Robes />
-			<Shorts />
-			<Nuisettes /> 
-			<Cosmetiques />
-			<Soutiens />
-			<Parfums />
+      <Cosmetiques />
+		
+		
+			
 
       
       {/* <EnVogue /> */}
@@ -98,9 +83,8 @@ const Home = () => {
                 </div>
 			{/* Whattsapp button */}
       <Footer />
-      
     </>
   )
-}
+};
 
-export default Home
+export default CosmetiqueScreen;

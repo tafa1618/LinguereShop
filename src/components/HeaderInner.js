@@ -24,7 +24,7 @@ const HeaderInner = () => {
                     </Link>
                     <ul className='mega-menu'>
                       <li className='single-menu'>
-                        <Link to='#' className='title-link'>
+                        <Link to='/nuisettes' className='title-link'>
                           Nuisettes
                         </Link>
                         <div className='image'>
@@ -35,14 +35,14 @@ const HeaderInner = () => {
                           />
                         </div>
                         <div className='inner-link'>
-                          <Link to='#'>Robes</Link>
-                          <Link to='#'>Robes</Link>
-                          <Link to='#'>Robes</Link>
-                          <Link to='#'>Robes</Link>
+                          <Link to='/robes'>Robes</Link>
+                          <Link to='/robes'>Robes</Link>
+                          <Link to='/robes'>Robes</Link>
+                          <Link to='/robes'>Robes</Link>
                         </div>
                       </li>
                       <li className='single-menu'>
-                        <Link to='#' className='title-link'>
+                        <Link to='/nuisettes' className='title-link'>
                           Nuisettes
                         </Link>
                         <div className='image'>
@@ -53,10 +53,10 @@ const HeaderInner = () => {
                           />
                         </div>
                         <div className='inner-link'>
-                          <Link to='#'>Nuisettee</Link>
-                          <Link to='#'>Nuisettee</Link>
-                          <Link to='#'>Nuisettee</Link>
-                          <Link to='#'>Nuisettee</Link>
+                          <Link to='/nuisettes'>Nuisettee</Link>
+                          <Link to='/nuisettes'>Nuisettee</Link>
+                          <Link to='/nuisettes'>Nuisettee</Link>
+                          <Link to='/nuisettes'>Nuisettee</Link>
                         </div>
                       </li>
                       <li className='single-menu'>
@@ -80,16 +80,16 @@ const HeaderInner = () => {
                     </ul>
                   </li>
                   <li>
-                    <Link to='#'>Nuisettes</Link>
+                    <Link to='/nuisettes'>Nuisettes</Link>
                   </li>
                   <li>
-                    <Link to='#'>Shorts</Link>
+                    <Link to='/shorts'>Shorts</Link>
                   </li>
                   <li>
                     <Link to='#'>Sacs</Link>
                   </li>
                   <li>
-                    <Link to='#'>Robes</Link>
+                    <Link to='/robes'>Robes</Link>
                   </li>
                 </ul>
               </div>
@@ -102,7 +102,7 @@ const HeaderInner = () => {
                     <div className='nav-inner'>
                       <ul className='nav main-menu menu navbar-nav'>
                         <li className='active'>
-                          <Link to='#'>Accueil</Link>
+                          <Link to='/'>Accueil</Link>
                         </li>
                         <li>
                           <Link to='#'>Produits</Link>

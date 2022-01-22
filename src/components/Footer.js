@@ -36,23 +36,29 @@ const Footer = () => {
                 <h4>Produits</h4>
                 <ul>
                   <li>
-                    <Link to='#'>Robes</Link>
+                    <Link to='/robes'>Robes</Link>
                   </li>
 
                   <li>
-                    <Link to='#'>Nuisettes</Link>
+                    <Link to='/nuisettes'>Nuisettes</Link>
                   </li>
                   <li>
-                    <Link to='#'>Shorts</Link>
+                    <Link to='/shorts'>Shorts</Link>
                   </li>
                   <li>
-                    <Link to='#'>Cosmétiques</Link>
+                    <Link to='/cosmetiques'>Cosmétiques</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to='#'>Sacs</Link>
                   </li>
                   <li>
                     <Link to='#'>Chaussures</Link>
+                  </li> */}
+                  <li>
+                    <Link to='/parfums'>Parfums</Link>
+                  </li>
+                  <li>
+                    <Link to='/soutiens'>Soutiens</Link>
                   </li>
                 </ul>
               </div>

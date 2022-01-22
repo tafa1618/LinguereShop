@@ -53,7 +53,7 @@ const Electromenager = () => {
 												
 												<div className="single-product">
 													<div className="product-img">
-														<Link to="product-details.html">
+														<Link to={`/article/${Product.id}`}>
 															<img className="default-img" src={Product.image} style={style} alt={Product.name} />
 															<img className="hover-img" src={Product.image} style={style}alt={Product.name} />
 														</Link>
@@ -69,7 +69,7 @@ const Electromenager = () => {
 														</div>
 													</div>
 													<div className="product-content">
-														<h3><Link to="product-details.html">{Product.name}</Link></h3>
+														<h3><Link to={`/article/${Product.id}`}>{Product.name}</Link></h3>
 														<div className="product-price">
 															<span>{Product.price}FCFA</span>
 														</div>
@@ -97,7 +97,7 @@ const Electromenager = () => {
 											<div className="col-xl-3 col-lg-4 col-md-4 col-12" key={r.id}>
 												<div className="single-product">
 													<div className="product-img">
-														<Link to="product-details.html">
+														<Link to={`/article/${r.id}`}>
 															<img className="default-img" src={r.image} style={style} alt={r.name}/>
 															<img className="hover-img" src={r.image}  style={style} alt={r.name}/>
 														</Link>
@@ -113,7 +113,7 @@ const Electromenager = () => {
 														</div>
 													</div>
 													<div className="product-content">
-														<h3><Link to="product-details.html">{r.name}</Link></h3>
+														<h3><Link to={`/article/${r.id}`}>{r.name}</Link></h3>
 														<div className="product-price">
 															<span>{r.price}FCFA</span>
 														</div>
@@ -135,7 +135,7 @@ const Electromenager = () => {
 											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
 												<div className="single-product">
 													<div className="product-img">
-														<Link to="product-details.html">
+														<Link to={`/article/${s.id}`}>
 															<img className="default-img" src={s.image} style={style}alt={s.name}  />
 															<img className="hover-img" src={s.image}   style={style}alt={s.name}  />
 														</Link>
@@ -151,7 +151,7 @@ const Electromenager = () => {
 														</div>
 													</div>
 													<div className="product-content">
-														<h3><Link to="product-details.html">{s.name} </Link></h3>
+														<h3><Link to={`/article/${s.id}`}>{s.name} </Link></h3>
 														<div className="product-price">
 															<span>{s.price}FCFA</span>
 														</div>
@@ -174,7 +174,7 @@ const Electromenager = () => {
 											<div className="col-xl-3 col-lg-4 col-md-4 col-12" key={c.id}>
 												<div className="single-product">
 													<div className="product-img">
-														<Link to="product-details.html">
+														<Link to={`/article/${c.id}`}>
 															<img className="default-img" src={c.image}  style={style} alt={c.name} />
 															<img className="hover-img" src={c.image} style={style}  alt={c.name} />
 														</Link>
@@ -190,7 +190,7 @@ const Electromenager = () => {
 														</div>
 													</div>
 													<div className="product-content">
-														<h3><Link to="product-details.html">{c.name}</Link></h3>
+														<h3><Link to={`/article/${c.id}`}>{c.name}</Link></h3>
 														<div className="product-price">
 															<span>{c.price}FCFA </span>
 														</div>
@@ -213,7 +213,7 @@ const Electromenager = () => {
 											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
 												<div className="single-product">
 													<div className="product-img">
-														<Link to="product-details.html">
+														<Link to={`/article/${ch.id}`}>
 															<img className="default-img" src={ch.image} style={style} alt={ch.name} />
 															<img className="hover-img" src={ch.image} style={style} alt={ch.name}/>
 														</Link>
@@ -229,7 +229,7 @@ const Electromenager = () => {
 														</div>
 													</div>
 													<div className="product-content">
-														<h3><Link to="product-details.html">{ch.name}</Link></h3>
+														<h3><Link to={`/article/${ch.id}`}>{ch.name}</Link></h3>
 														<div className="product-price">
 															<span>{ch.price}FCFA </span>
 														</div>
@@ -253,7 +253,7 @@ const Electromenager = () => {
 											<div className="col-xl-3 col-lg-4 col-md-4 col-12" key={sa.id}>
 												<div className="single-product">
 													<div className="product-img">
-														<Link to="product-details.html">
+														<Link to={`/article/${sa.id}`}>
 															<img className="default-img" src={sa.image}   style={style}   alt={sa.name} />
 															<img className="hover-img" src={sa.image}   style={style}alt={sa.name} />
 														</Link>
@@ -269,7 +269,7 @@ const Electromenager = () => {
 														</div>
 													</div>
 													<div className="product-content">
-														<h3><Link to="product-details.html">{sa.name}</Link></h3>
+														<h3><Link to={`/article/${sa.id}`}>{sa.name}</Link></h3>
 														<div className="product-price">
 															<span>{sa.price}FCFA </span>
 														</div>

@@ -27,7 +27,7 @@ const Robes = () => {
 							{Robes.map(nuisette => (
 						<div className="single-product" key={nuisette.id}>
                             <div className="product-img">
-                                <Link to="product-details.html">
+                                <Link to={`/article/${nuisette.id}`}>
                                     <img className="default-img"  style={style} src={nuisette.image} alt={nuisette.name} />
                                     <img className="hover-img" style={style} src={nuisette.image} alt={nuisette.name}/>
                                 </Link>
@@ -43,7 +43,7 @@ const Robes = () => {
 								</div>
                             </div>
                             <div className="product-content">
-                                <h3><Link to="product-details.html">{nuisette.name}</Link></h3>
+                                <h3><Link to={`/article/${nuisette.id}`}>{nuisette.name}</Link></h3>
                                 <div className="product-price">
                                     <span>{nuisette.price}FCFA</span>
                                 </div>

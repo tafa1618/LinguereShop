@@ -21,7 +21,7 @@ const Products = [
   {
     id: '3',
     name: 'Nuisette 3 pièces ',
-    image: 'https://i.ibb.co/D19Q7yf/1.jpg',
+    image: 'https://i.ibb.co/Btp6JT2/1.jpg',
     description:
       'Nuisette taille standard couleur Bleu Bic  -Bleu-turkoise -rouge -noir -rose -blanc ',
     category: 'Nuisette',
@@ -46,7 +46,7 @@ const Products = [
   {
     id: '6',
     name: 'Nuisette 3 pièces  ',
-    image: 'https://i.ibb.co/3vd129P/4.jpg',
+    image: 'https://i.ibb.co/FWRQTZK/4.jpg',
     description: 'Taille standard Couleur Rouge saumo noire bleu-bic beige',
     category: 'Nuisette',
     price: 6000,
@@ -327,7 +327,7 @@ const Products = [
     price: 3500,
   },
   {
-    id: '37',
+    id: '37a',
     name: 'Soutien Confort ',
     image:
       'https://i.ibb.co/8PMs3Wd/Whats-App-Image-2022-01-14-at-16-14-30.jpg',
@@ -417,7 +417,7 @@ const Products = [
     price: 2500,
   },
   {
-    id: '47',
+    id: '47b',
     name: 'Vimax et Imax Power ',
     image:
       'https://i.ibb.co/zFHgcpQ/Whats-App-Image-2022-01-13-at-12-12-05-1.jpg',
@@ -532,6 +532,160 @@ const Products = [
     description: 'Gamme parfum 3 pièces',
     category: 'Parfum',
     price: 10000,
+  },
+  {
+    id: '60',
+    name: 'Robe de Chambre Noire',
+    image:
+      'https://i.ibb.co/HT1hMk7/Whats-App-Image-2022-01-19-at-13-41-31-1.jpg',
+    description: 'Robe de Chambre Noire',
+    category: 'Robe',
+    price: 7000,
+  },
+  {
+    id: '61',
+    name: 'Robe de Chambre Bleue',
+    image:
+      'https://i.ibb.co/T0zkp8k/Whats-App-Image-2022-01-19-at-13-41-31.jpg',
+    description: 'Robe de Chambre Bleue',
+    category: 'Robe',
+    price: 7000,
+  },
+  {
+    id: '61a',
+    name: 'Robe de Chambre',
+    image:
+      'https://i.ibb.co/1GByPMK/Whats-App-Image-2022-01-19-at-13-41-30.jpg',
+    description: 'Robe de Chambre',
+    category: 'Robe',
+    price: 4000,
+  },
+  {
+    id: '62',
+    name: 'Slip-Gaine',
+    image:
+      'https://i.ibb.co/T2c2PzZ/Whats-App-Image-2022-01-19-at-13-41-29-1.jpg',
+    description: 'Slip-Gaine',
+    category: 'Short',
+    price: 2000,
+  },
+  {
+    id: '63',
+    name: 'Slip-Gaine',
+    image:
+      'https://i.ibb.co/gvLTpgd/Whats-App-Image-2022-01-19-at-13-41-29.jpg',
+    description: 'Slip-Gaine',
+    category: 'Short',
+    price: 2000,
+  },
+  {
+    id: '64',
+    name: 'Nuisette',
+    image:
+      'https://i.ibb.co/hmPSdkL/Whats-App-Image-2022-01-19-at-19-49-04-3.jpg',
+    description: 'Nuisette meuve',
+    category: 'Nuisette',
+    price: 6000,
+  },
+  {
+    id: '65',
+    name: 'Robe de chambre',
+    image:
+      'https://i.ibb.co/xs6xq58/Whats-App-Image-2022-01-19-at-19-49-05.jpg',
+    description: 'Robe de chambre',
+    category: 'Robe',
+    price: 5000,
+  },
+
+  {
+    id: '67',
+    name: 'Nuisette',
+    image:
+      'https://i.ibb.co/8BCBhLW/Whats-App-Image-2022-01-19-at-19-49-05-1.jpg',
+    description: 'Nuisette',
+    category: 'Nuisette',
+    price: 5000,
+  },
+  {
+    id: '68',
+    name: 'Nuisette',
+    image:
+      'https://i.ibb.co/sCGFtfz/Whats-App-Image-2022-01-19-at-19-49-05-2.jpg',
+    description: 'ensemble nuisette deux pièce rouge',
+    category: 'Nuisette',
+    price: 7000,
+  },
+  {
+    id: '69',
+    name: 'Nuisette',
+    image:
+      'https://i.ibb.co/gmGmys0/Whats-App-Image-2022-01-19-at-19-49-06.jpg',
+    description: 'ensemble nuisette deux pièce noire',
+    category: 'Nuisette',
+    price: 7500,
+  },
+  {
+    id: '70',
+    name: 'Robe de chambre longue rouge',
+    image:
+      'https://i.ibb.co/fdVNpYH/Whats-App-Image-2022-01-19-at-19-49-06-1.jpg',
+    description: 'Robe de chambre longue rouge',
+    category: 'Robe',
+    price: 10000,
+  },
+  {
+    id: '71',
+    name: 'Ensemble Ruselin',
+    image:
+      'https://i.ibb.co/KDQF4C4/Whats-App-Image-2022-01-19-at-19-49-06-2.jpg',
+    description: 'Ensemble ruselin',
+    category: 'Short',
+    price: 6000,
+  },
+  {
+    id: '72',
+    name: 'Ensemble Ruselin',
+    image:
+      'https://i.ibb.co/tBR9rg5/Whats-App-Image-2022-01-19-at-19-49-07.jpg',
+    description: 'Ensemble ruselin',
+    category: 'Short',
+    price: 6000,
+  },
+  {
+    id: '73',
+    name: 'Slip Coton',
+    image:
+      'https://i.ibb.co/N9yCzhL/Whats-App-Image-2022-01-19-at-19-49-07-1.jpg',
+    description: 'Slip Coton',
+    category: 'Short',
+    price: 900,
+  },
+  {
+    id: '74',
+    name: 'Slip Coton',
+    image:
+      'https://i.ibb.co/8js1zrD/Whats-App-Image-2022-01-19-at-19-49-07-2.jpg',
+    description: 'Slip Coton',
+    category: 'Short',
+    price: 900,
+  },
+  {
+    id: '75',
+    name: 'Ensemble Ruselin',
+    image:
+      'https://i.ibb.co/dtckGT4/Whats-App-Image-2022-01-19-at-19-49-08.jpg',
+    description: 'Ensemble ruselin',
+    category: 'Short',
+    price: 6000,
+  },
+  {
+    id: '76',
+    name: 'Ensemble Deux pièces',
+    image:
+      'https://i.ibb.co/Xs51XGf/Whats-App-Image-2022-01-19-at-19-49-08-1.jpg',
+    description: 'Ensemble Deux pièces couleur bleu rouge et noire',
+    category: 'Short',
+    price: 4000,
   },
 ];
 
