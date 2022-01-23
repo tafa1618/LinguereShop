@@ -113,7 +113,7 @@ const Products = [
     name: 'Gel de Douche Extra white',
     image: 'https://i.ibb.co/zHSQp8f/Gel-de-Douche-Xtra-White3500.jpg',
     description: 'Gel de Douche Extra white',
-    category: 'Coesmétique',
+    category: 'Cosmétique',
     price: 3500,
   },
   {
@@ -121,7 +121,7 @@ const Products = [
     name: 'Lait de corps Lemon Glow',
     image: 'https://i.ibb.co/NpNdWYy/Lait-de-corps-Lemon-Glow26000.jpg',
     description: 'Lait de corps Lemon Glow',
-    category: 'Coesmétique',
+    category: 'Cosmétique',
     price: 2600,
   },
   {
@@ -129,7 +129,7 @@ const Products = [
     name: 'Lait de corps Jergens',
     image: 'https://i.ibb.co/R264t4K/Laitdecorps-Jergens5000.jpg',
     description: 'Lait de corps Jergens',
-    category: 'Coesmétique',
+    category: 'Cosmétique',
     price: 5000,
   },
   {
@@ -137,7 +137,7 @@ const Products = [
     name: 'Lait de corps Keri',
     image: 'https://i.ibb.co/zmtssG3/Lait-Decorps-Keri8000.jpg',
     description: 'Lait de corps Keri',
-    category: 'Coesmétique',
+    category: 'Cosmétique',
     price: 8000,
   },
   {
@@ -145,7 +145,7 @@ const Products = [
     name: 'Lait de corps Topi Crème',
     image: 'https://i.ibb.co/zVL7xLT/Lait-Decorps-Topi-Crem8000.jpg',
     description: 'Lait de corps Topi Crème',
-    category: 'Coesmétique',
+    category: 'Cosmétique',
     price: 8000,
   },
   {
@@ -153,7 +153,7 @@ const Products = [
     name: 'Lait de toilette pour bébé',
     image: 'https://i.ibb.co/2Z2Ltq9/Laitde-Toilette-Bebe8000.jpg',
     description: 'Lait de toilette pour bébé',
-    category: 'Coesmétique',
+    category: 'Cosmétique',
     price: 8000,
   },
   {
@@ -161,7 +161,7 @@ const Products = [
     name: 'Machine Sèche Emaille',
     image: 'https://i.ibb.co/mCmZwGy/Machine-Seche-Emaille20000.jpg',
     description: 'Machine Sèche Emaille',
-    category: 'Coesmétique',
+    category: 'Cosmétique',
     price: 20000,
   },
   {
@@ -169,7 +169,7 @@ const Products = [
     name: 'Pack gel Lait Savon Cindella ',
     image: 'https://i.ibb.co/zfFB2Z1/Pack-Gel-Lait-Savon-Cindella38000.jpg',
     description: 'Pack gel Lait Savon Cindella',
-    category: 'Coesmétique',
+    category: 'Cosmétique',
     price: 38000,
   },
   {
@@ -177,7 +177,7 @@ const Products = [
     name: 'Pack gel Lait Savon Cindella ',
     image: 'https://i.ibb.co/zfFB2Z1/Pack-Gel-Lait-Savon-Cindella38000.jpg',
     description: 'Pack gel Lait Savon Cindella',
-    category: 'Coesmétique',
+    category: 'Cosmétique',
     price: 38000,
   },
   {
@@ -185,7 +185,7 @@ const Products = [
     name: 'Parfums Scandal et Bouage',
     image: 'https://i.ibb.co/92Vn74k/Parfum6000-Skandal-Et-Bouage.jpg',
     description: 'Parfums Scandal et Bouage',
-    category: 'Coesmétique',
+    category: 'Cosmétique',
     price: 6000,
   },
   {
@@ -193,7 +193,7 @@ const Products = [
     name: 'Pâte dentifrice Fluocaril',
     image: 'https://i.ibb.co/R0Dxznt/Patedentifrice-Fluocaril3000.jpg',
     description: 'Pâte dentifrice Fluocaril',
-    category: 'Coesmétique',
+    category: 'Cosmétique',
     price: 3000,
   },
   {
@@ -201,7 +201,7 @@ const Products = [
     name: 'Peigne Electrique',
     image: 'https://i.ibb.co/S67WbV4/peigne-Electrique22000.jpg',
     description: 'Peigne Electrique',
-    category: 'Coesmétique',
+    category: 'Cosmétique',
     price: 13000,
   },
   {
@@ -209,7 +209,7 @@ const Products = [
     name: 'Serum Anti Tâche Collagen',
     image: 'https://i.ibb.co/PMWk4kw/Serumanti-Tache-Collagen10000.jpg',
     description: 'Serum Anti Tâche Collagen',
-    category: 'Coesmétique',
+    category: 'Cosmétique',
     price: 10000,
   },
   {
@@ -217,7 +217,7 @@ const Products = [
     name: 'Serum Magic Oil',
     image: 'https://i.ibb.co/JH5nVfv/Serum-Magicoil8000.jpg',
     description: 'Serum Magic Oil',
-    category: 'Coesmétique',
+    category: 'Cosmétique',
     price: 8000,
   },
   {
@@ -225,7 +225,7 @@ const Products = [
     name: 'Babyliss',
     image: 'https://i.ibb.co/0DJVXXz/Babyliss10000.jpg',
     description: 'Babyliss',
-    category: 'Coesmétique',
+    category: 'Cosmétique',
     price: 10000,
   },
   {
@@ -234,7 +234,7 @@ const Products = [
     image:
       'https://i.ibb.co/ZS4BZJD/Eclaircissant-Francoise-Bedon-Royal12000.jpg',
     description: 'Eclaircissant  Bedon Royal',
-    category: 'Coesmétique',
+    category: 'Cosmétique',
     price: 12000,
   },
   {
@@ -242,7 +242,7 @@ const Products = [
     name: 'Gel de Douche Cathy Choo ',
     image: 'https://i.ibb.co/H4NHTPJ/Gel-de-Douche-Cathy-Choo10000.jpg',
     description: 'Gel de Douche Cathy Choo ',
-    category: 'Coesmétique',
+    category: 'Cosmétique',
     price: 10000,
   },
   {

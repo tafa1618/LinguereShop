@@ -9,6 +9,7 @@ const Robes = () => {
     height: 350
   };
   return (
+      <>
     <div className="product-area most-popular section">
         <div className="container">
             <div className="row">
@@ -61,6 +62,7 @@ const Robes = () => {
             </div>
         </div>
     </div>
+      </>
   )
 }
 

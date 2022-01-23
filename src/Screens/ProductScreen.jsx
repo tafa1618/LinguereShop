@@ -2,12 +2,9 @@ import React from 'react'
 import {Link,useParams } from 'react-router-dom'
 import Products from '../data/Products'
 
-import ShopServices from '../components/ShopServices';
-import Footer from '../components/Footer';
-import Topbar from '../components/Topbar';
-import MiddleInner from '../components/MiddleInner';
-import HeaderInner from '../components/HeaderInner';
-import Hero from '../components/Hero';
+
+
+
 
 
 const ProductScreen = () => {
@@ -38,12 +35,7 @@ const fa={
 
   return (
     <>
-     <header className='header shop'>
-        <Topbar />
-        <MiddleInner />
-        <HeaderInner />
-      </header>
-      <Hero />
+ 
     <div className="container mt-5 mb-5" style={body}>
     <div className="row d-flex justify-content-center">
       
@@ -59,7 +51,7 @@ const fa={
                     <div className="col-md-6">
                         <div className="product p-4">
                             <div className="d-flex justify-content-between align-items-center">
-                                <div className="d-flex align-items-center"> <i className="fa fa-long-arrow-left"></i> <span className="ml-1"><Link to="/" >Back</Link></span> </div> <i className="fa fa-shopping-cart text-muted"></i>
+                                <div className="d-flex align-items-center"><Link to="/" > <i className="fa fa-long-arrow-left"></i> <span className="ml-1">Back</span> </Link></div> <i className="fa fa-shopping-cart text-muted"></i>
                             </div>
                             <div className="mt-4 mb-3"> <span className="text-uppercase text-muted " style={brand}>Nom</span>
                                 <h5 className="text-uppercase">{article.name}</h5>
@@ -85,8 +77,8 @@ const fa={
 <i className="fa fa-whatsapp fa-3x fa-spin" aria-hidden="true"></i></a>
                 </div>
 			{/* Whattsapp button */}
-      <ShopServices />
-      <Footer />
+  
+      {/* <Footer /> */}
 </>
   )
 }

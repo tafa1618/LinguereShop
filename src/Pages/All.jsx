@@ -1,9 +1,9 @@
 import React from 'react'
 import {Link} from 'react-router-dom' 
-
 import Products from '../data/Products'
 
-const Electromenager = () => {
+
+const All = () => {
 	const style = {
     width: 350,
     height: 350
@@ -12,9 +12,9 @@ const Electromenager = () => {
 	const Nuisettes = Products.filter(p => p.category === 'Nuisette')
 	const Robes = Products.filter(p => p.category === 'Robe')
 	const Shorts = Products.filter(p => p.category === 'Short')
-	const Cosmetiques = Products.filter(p => p.category === 'Coesmétique')
-	const Chaussures = Products.filter(p => p.category === 'Chaussure')
-	const Sacs = Products.filter(p => p.category === 'Sacs')
+	const Cosmetiques = Products.filter(p => p.category === 'Cosmétique')
+	const Soutiens = Products.filter(p => p.category === 'Soutien')
+	const Parfums = Products.filter(p => p.category === 'Parfum')
 	
   return (
     <div className="product-area section">
@@ -37,8 +37,8 @@ const Electromenager = () => {
 									<li className="nav-item"><a className="nav-link" data-toggle="tab" href="#women" role="tab">Robes</a></li>
 									<li className="nav-item"><a className="nav-link" data-toggle="tab" href="#shorts" role="tab">Shorts</a></li>
 									<li className="nav-item"><a className="nav-link" data-toggle="tab" href="#cosmetique" role="tab">Cosmétiques</a></li>
-									<li className="nav-item"><a className="nav-link" data-toggle="tab" href="#chaussures" role="tab">Chaussures</a></li>
-									<li className="nav-item"><a className="nav-link" data-toggle="tab" href="#sacs" role="tab">Sacs</a></li>
+									<li className="nav-item"><a className="nav-link" data-toggle="tab" href="#Soutiens" role="tab">Soutiens</a></li>
+									<li className="nav-item"><a className="nav-link" data-toggle="tab" href="#Parfums" role="tab">Parfums</a></li>
 									
 								</ul>
 								{/*<!--/ End Tab Nav -->*/}
@@ -205,10 +205,10 @@ const Electromenager = () => {
 								</div>
 								{/*<!--/ End Single Tab -->*/}
 								{/*<!-- Start Single Tab -->*/}
-								<div className="tab-pane fade" id="chaussures" role="tabpanel">
+								<div className="tab-pane fade" id="Soutiens" role="tabpanel">
 									<div className="tab-single">
 										<div className="row">
-											{Chaussures.map(ch => (
+											{Soutiens.map(ch => (
 
 											<div className="col-xl-3 col-lg-4 col-md-4 col-12">
 												<div className="single-product">
@@ -245,10 +245,10 @@ const Electromenager = () => {
 								</div>
 								{/*<!--/ End Single Tab -->*/}
 								{/*<!-- Start Single Tab -->*/}
-								<div className="tab-pane fade" id="sacs" role="tabpanel">
+								<div className="tab-pane fade" id="Parfums" role="tabpanel">
 									<div className="tab-single">
 										<div className="row">
-											{Sacs.map(sa => (
+											{Parfums.map(sa => (
 
 											<div className="col-xl-3 col-lg-4 col-md-4 col-12" key={sa.id}>
 												<div className="single-product">
@@ -294,4 +294,4 @@ const Electromenager = () => {
   );
 };
 
-export default Electromenager
+export default All

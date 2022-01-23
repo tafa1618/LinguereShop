@@ -2,20 +2,22 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import Products from '../data/Products'
 
+
 const Cosmetiques = () => {
-	const Cosmetiques = Products.filter(p => p.category === 'Coesmétique')
+	const Cosmetiques = Products.filter(p => p.category === 'Cosmétique')
 	const style = {
     width: 350,
     height: 350
   };
   return (
+      <>
     <div className="product-area most-popular section">
         <div className="container">
             <div className="row">
 							
 				<div className="col-12">
 					<div className="section-title">
-						<h2>Cosmetiques</h2>
+						<h2>Cosmétiques</h2>
 					</div>
 				</div>
             </div>
@@ -61,6 +63,7 @@ const Cosmetiques = () => {
             </div>
         </div>
     </div>
+      </>
   )
 }
 

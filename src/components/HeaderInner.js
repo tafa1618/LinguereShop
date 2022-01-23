@@ -61,7 +61,7 @@ const HeaderInner = () => {
                       </li>
                       <li className='single-menu'>
                         <Link to='#' className='title-link'>
-                          Sacs
+                          Cosmétiques
                         </Link>
                         <div className='image'>
                           <img
@@ -71,10 +71,10 @@ const HeaderInner = () => {
                           />
                         </div>
                         <div className='inner-link'>
-                          <Link to='#'>Sacs</Link>
-                          <Link to='#'> Sacs</Link>
-                          <Link to='#'>Sacs</Link>
-                          <Link to='#'>Sacs</Link>
+                          <Link to='#'>Cosmétiques</Link>
+                          <Link to='#'> Cosmétiques</Link>
+                          <Link to='#'>Cosmétiques</Link>
+                          <Link to='#'>Cosmétiques</Link>
                         </div>
                       </li>
                     </ul>
@@ -86,7 +86,7 @@ const HeaderInner = () => {
                     <Link to='/shorts'>Shorts</Link>
                   </li>
                   <li>
-                    <Link to='#'>Sacs</Link>
+                    <Link to='/cosmetiques'>Cosmétiques</Link>
                   </li>
                   <li>
                     <Link to='/robes'>Robes</Link>

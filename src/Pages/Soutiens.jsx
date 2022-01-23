@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-
 import Products from '../data/Products'
+
 
 const Soutiens = () => {
 	const Soutiens = Products.filter(p => p.category === 'Soutien')
@@ -10,6 +10,7 @@ const Soutiens = () => {
     height: 350
   };
   return (
+      <>
     <div className="product-area most-popular section">
         <div className="container">
             <div className="row">
@@ -62,6 +63,7 @@ const Soutiens = () => {
             </div>
         </div>
     </div>
+      </>
   )
 }
 

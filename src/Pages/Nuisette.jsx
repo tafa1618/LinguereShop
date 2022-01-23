@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-
 import Products from '../data/Products'
 
 const Nuisettes = () => {
@@ -10,6 +9,7 @@ const Nuisettes = () => {
     height: 350
   };
   return (
+      <>
     <div className="product-area most-popular section">
         <div className="container">
             <div className="row">
@@ -62,6 +62,7 @@ const Nuisettes = () => {
             </div>
         </div>
     </div>
+      </>
   )
 }
 
