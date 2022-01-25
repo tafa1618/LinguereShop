@@ -1,6 +1,12 @@
 import React from 'react'
-import {Link,useParams } from 'react-router-dom'
+import {Link,useParams  } from 'react-router-dom'
 import Products from '../data/Products'
+
+import Topbar from '../components/Topbar'
+import MiddleInner from '../components/MiddleInner'
+import HeaderInner from '../components/HeaderInner'
+import Hero from '../components/Hero'
+
 
 
 
@@ -13,10 +19,12 @@ const ProductScreen = () => {
   
 
 const brand = {
-  fontSize: "13px"
+  fontSize: "13px",
+  marginTop: "-400px"
 }
 const body = {
   width: "100%",
+ 
 }
 const actPrice ={
   color: "red",
@@ -33,10 +41,16 @@ const fa={
 }
 
 
+
   return (
     <>
- 
-    <div className="container mt-5 mb-5" style={body}>
+ <header className='header shop'>
+        <Topbar />
+        <MiddleInner />
+        <HeaderInner />
+      </header>
+      <Hero />
+    <div className="container my-5 mb-5" style={body}>
     <div className="row d-flex justify-content-center">
       
         <div className="col-md-10">
@@ -44,14 +58,14 @@ const fa={
                 <div className="row">
                     <div className="col-md-6">
                         <div className="images p-3">
-                            <div className="text-center p-4"> <img id="main-image" src={article.image} alt={article.name} width="300" /> </div>
+                            <div className="text-center p-4"> <img id="main-image" src={article.image} alt={article.name} width="350" height="300" /> </div>
                            
                         </div>
                     </div>
                     <div className="col-md-6">
                         <div className="product p-4">
                             <div className="d-flex justify-content-between align-items-center">
-                                <div className="d-flex align-items-center"><Link to="/" > <i className="fa fa-long-arrow-left"></i> <span className="ml-1">Back</span> </Link></div> <i className="fa fa-shopping-cart text-muted"></i>
+                                <div className="d-flex align-items-center"><Link  to="/"  > <i className="fa fa-long-arrow-left"></i> <span className="ml-1">Arrière</span> </Link></div> <i className="fa fa-shopping-cart text-muted"></i>
                             </div>
                             <div className="mt-4 mb-3"> <span className="text-uppercase text-muted " style={brand}>Nom</span>
                                 <h5 className="text-uppercase">{article.name}</h5>
@@ -78,7 +92,7 @@ const fa={
                 </div>
 			{/* Whattsapp button */}
   
-      {/* <Footer /> */}
+      
 </>
   )
 }

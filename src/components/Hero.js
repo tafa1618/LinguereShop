@@ -2,8 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
+  const mBottom = {
+    marginBottom: '-150px',
+  };
   return (
-    <section className='hero-slider'>
+    <section className='hero-slider' style={mBottom}>
       {/* Single Slider */}
       <div className='single-slider'>
         <div className='container'>

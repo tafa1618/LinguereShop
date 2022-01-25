@@ -1,6 +1,19 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import Products from '../data/Products'
+
 const EnVogue = () => {
+	const style = {
+    width: 350,
+    height: 350
+  };
+
+	const Nuisettes = Products.filter(p => p.category === 'Nuisette')
+	const Robes = Products.filter(p => p.category === 'Robe')
+	const Shorts = Products.filter(p => p.category === 'Short')
+	const Cosmetiques = Products.filter(p => p.category === 'Cosmétique')
+	const Soutiens = Products.filter(p => p.category === 'Soutien')
+	const Parfums = Products.filter(p => p.category === 'Parfum')
   return (
     <section className="shop-home-list section">
 		<div className="container">

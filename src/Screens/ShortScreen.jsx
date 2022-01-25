@@ -1,5 +1,8 @@
 import React from 'react'
-
+import Topbar from '../components/Topbar'
+import MiddleInner from '../components/MiddleInner'
+import HeaderInner from '../components/HeaderInner'
+import Hero from '../components/Hero'
 
 
 
@@ -29,7 +32,12 @@ const ShortScreen = () => {
   return (
     <>
 
-    
+<header className='header shop'>
+        <Topbar />
+        <MiddleInner />
+        <HeaderInner />
+      </header>
+      <Hero />
 
      
 	<div className="product-area section">

@@ -5,6 +5,10 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import Products from '../data/Products';
 
+import Topbar from '../components/Topbar'
+import MiddleInner from '../components/MiddleInner'
+import HeaderInner from '../components/HeaderInner'
+import Hero from '../components/Hero'
 
 
 
@@ -14,6 +18,9 @@ const CosmetiqueScreen = () => {
     width: 350,
     height: 400
   };
+	const myHaut={
+    marginTop: "-150px"
+  }
 	const Nuisettes = Products.filter(p => p.category === 'Nuisette')
 	const Robes = Products.filter(p => p.category === 'Robe')
 	const Shorts = Products.filter(p => p.category === 'Short')
@@ -24,10 +31,15 @@ const CosmetiqueScreen = () => {
     <>
 
     
-     
+<header className='header shop'>
+        <Topbar />
+        <MiddleInner />
+        <HeaderInner />
+      </header>
+      <Hero />
 
      
-	<div className="product-area section">
+	<div className="product-area section" style={myHaut}>
             <div className="container">
 				<div className="row">
 					<div className="col-12">
